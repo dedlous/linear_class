@@ -101,6 +101,7 @@ class Plane(object):
         n2=p.normal_vector
         print 'n1 normal vector',n1
         print 'n2 normal vector', n2
+        print 'angle',n1.angle_with(n2)
         return n1.is_parallel_to(n2)
 
     def __eq__(self,p):
